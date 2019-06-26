@@ -1,0 +1,14 @@
+{
+  "name": "drupal/startups",
+  "type": "drupal-module",
+  "description": "startups content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/startups",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/startups",
+    "source": "http://cgit.drupalcode.org/startups"
+  },
+  "require": { }
+}

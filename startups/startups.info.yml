@@ -1,0 +1,13 @@
+name: 'startups'
+type: module
+description: 'startups content type'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:link
+  - drupal:file
+  - drupal:image
+  - drupal:text
+  - drupal:user
+  - drupal:menu_ui

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains startups.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function startups_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the startups module.
+    case 'help.page.startups':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('startups content type') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function startups_theme() {
+  return [
+    'startups' => [
+      'render element' => 'children',
+    ],
+  ];
+}

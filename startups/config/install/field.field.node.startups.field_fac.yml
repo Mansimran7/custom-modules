@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac
+    - node.type.startups
+  module:
+    - link
+  enforced:
+    module:
+      - startups
+id: node.startups.field_fac
+field_name: field_fac
+entity_type: node
+bundle: startups
+label: 'Facebook Link'
+description: 'Link to facebook page of startup'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

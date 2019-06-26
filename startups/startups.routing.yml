@@ -1,0 +1,8 @@
+
+startups.startups_controller_hello:
+  path: '/startups/hello/{name}'
+  defaults:
+    _controller: '\Drupal\startups\Controller\startupsController::hello'
+    _title: 'startupsController'
+  requirements:
+    _permission: 'access content'

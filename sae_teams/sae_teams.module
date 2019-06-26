@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains sae_teams.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sae_teams_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sae_teams module.
+    case 'help.page.sae_teams':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('sae teams content type import') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sae_teams_theme() {
+  return [
+    'sae_teams' => [
+      'render element' => 'children',
+    ],
+  ];
+}

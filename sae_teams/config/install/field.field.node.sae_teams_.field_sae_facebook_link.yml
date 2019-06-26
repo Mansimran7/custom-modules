@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sae_facebook_link
+    - node.type.sae_teams_
+  module:
+    - link
+  enforced:
+    module:
+      - sae_teams
+id: node.sae_teams_.field_sae_facebook_link
+field_name: field_sae_facebook_link
+entity_type: node
+bundle: sae_teams_
+label: 'sae Facebook Link'
+description: 'Facebook link of sae teams'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

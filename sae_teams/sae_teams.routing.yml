@@ -1,0 +1,8 @@
+
+sae_teams.sae_teams_controller_hello:
+  path: '/sae_teams/hello/{name}'
+  defaults:
+    _controller: '\Drupal\sae_teams\Controller\sae_teamsController::hello'
+    _title: 'sae_teamsController'
+  requirements:
+    _permission: 'access content'

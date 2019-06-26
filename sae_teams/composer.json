@@ -1,0 +1,14 @@
+{
+  "name": "drupal/sae_teams",
+  "type": "drupal-module",
+  "description": "sae teams content type import",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/sae_teams",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/sae_teams",
+    "source": "http://cgit.drupalcode.org/sae_teams"
+  },
+  "require": { }
+}

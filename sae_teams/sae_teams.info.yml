@@ -1,0 +1,14 @@
+name: 'sae_teams'
+type: module
+description: 'sae teams content type import'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:text
+  - drupal:user
+  - drupal:link
+  - drupal:menu_ui
+  - drupal:image
+  - drupal:file
+

@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonials.body
+    - field.field.node.testimonials.field_country_
+    - field.field.node.testimonials.field_program_
+    - field.field.node.testimonials.field_student_image
+    - node.type.testimonials
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - testimonials
+id: node.testimonials.teaser
+targetEntityType: node
+bundle: testimonials
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_country_: true
+  field_program_: true
+  field_student_image: true
+  langcode: true

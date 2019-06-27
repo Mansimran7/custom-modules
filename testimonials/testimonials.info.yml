@@ -1,0 +1,14 @@
+name: 'testimonials'
+type: module
+description: 'importing testimonials content type'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:text
+  - drupal:user
+  - drupal:file
+  - drupal:menu_ui
+  - drupal:taxonomy
+  - drupal:image
+  - drupal:path

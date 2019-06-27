@@ -1,0 +1,12 @@
+uuid: 69a8ee92-8cfc-42b5-a695-c10a1586d295
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - testimonials
+name: 'Program pursuing/completed'
+vid: program_pursuing_
+description: 'This field gives informtion of the program he is pursuing in VIT'
+hierarchy: 0
+weight: 0

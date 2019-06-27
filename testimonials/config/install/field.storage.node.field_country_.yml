@@ -1,0 +1,23 @@
+uuid: 26147ff6-1fae-4d52-9ec5-ae8de3abc6d3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - testimonials
+id: node.field_country_
+field_name: field_country_
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/testimonials",
+  "type": "drupal-module",
+  "description": "importing testimonials content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/testimonials",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/testimonials",
+    "source": "http://cgit.drupalcode.org/testimonials"
+  },
+  "require": { }
+}

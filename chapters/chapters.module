@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains chapters.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function chapters_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the chapters module.
+    case 'help.page.chapters':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function chapters_theme() {
+  return [
+    'chapters' => [
+      'render element' => 'children',
+    ],
+  ];
+}

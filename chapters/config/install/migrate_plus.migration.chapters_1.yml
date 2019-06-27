@@ -1,0 +1,58 @@
+uuid: 9cfc3d24-5f29-4a18-9ab1-c0b86b9e8728
+langcode: en
+id: chapters_1
+status: true
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: default
+label: 'chapters_csv_import1'
+source:
+  plugin: csv
+  path: /home/mansimran/Desktop/mansimran1/chapters.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+    file_source: /var/www/migrationdata/chapters
+    file_dest: 'public://chapters/'
+process:
+  type:
+    plugin: default_value
+    default_value: student_chapter
+  source_path:  
+    -
+      plugin: skip_on_empty
+      method: process
+      source: chapter_logo
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/file_source
+        - chapter_logo
+  title: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_chapter_category:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    bundle: chapter_category
+    source: chapter_category
+  field_chapter_logo:
+    plugin: file_import
+    source: '@source_path'
+    destination: constants/file_dest
+  field_chapter_facebook_link/uri: chapter_facebook_link
+destination:
+  plugin: 'entity:node'
+  bundle: student_chapter
+migration_dependencies:
+  required: {  }
+  optional: {  }

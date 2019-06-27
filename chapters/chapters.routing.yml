@@ -1,0 +1,8 @@
+
+chapters.chapters_controller_hello:
+  path: '/chapters/hello/{name}'
+  defaults:
+    _controller: '\Drupal\chapters\Controller\chaptersController::hello'
+    _title: 'chaptersController'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,16 @@
+name: 'chapters'
+type: module
+description: 'My Awesome Module'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:menu_ui
+  - drupal:file
+  - drupal:image
+  - drupal:link
+  - drupal:taxonomy
+  - drupal:path
+  - drupal:text
+  - drupal:user
+

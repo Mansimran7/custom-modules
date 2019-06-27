@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student_chapter.body
+    - field.field.node.student_chapter.field_chapter_category
+    - field.field.node.student_chapter.field_chapter_facebook_link
+    - field.field.node.student_chapter.field_chapter_logo
+    - node.type.student_chapter
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - chapters
+id: node.student_chapter.teaser
+targetEntityType: node
+bundle: student_chapter
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_chapter_category: true
+  field_chapter_facebook_link: true
+  field_chapter_logo: true
+  langcode: true

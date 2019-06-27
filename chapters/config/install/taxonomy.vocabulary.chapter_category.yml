@@ -1,0 +1,12 @@
+uuid: 8dfa8ec9-056f-423c-8c93-abfc232735c3
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - chapters
+name: 'Chapter category'
+vid: chapter_category
+description: 'Chapter category'
+hierarchy: 0
+weight: 0

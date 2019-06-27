@@ -1,0 +1,22 @@
+uuid: f93b9a5d-516b-441c-a733-cf091824d0e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+  enforced:
+    module:
+      - chapters
+id: node.field_chapter_facebook_link
+field_name: field_chapter_facebook_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,12 @@
+uuid: a5725386-67c9-44f9-9b47-efaec62ff7a1
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - international_transfer_program
+name: Country
+vid: continent
+description: 'Country where the university is from '
+hierarchy: 0
+weight: 0

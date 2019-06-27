@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - international_transfer_program
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'International Transfer Program'
+type: international_transfer_program
+description: 'The foreign Universities VIT is affliated with '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

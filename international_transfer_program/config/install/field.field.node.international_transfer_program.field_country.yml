@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.international_transfer_program
+    - taxonomy.vocabulary.continent
+  enforced:
+    module:
+      - international_transfer_program
+id: node.international_transfer_program.field_country
+field_name: field_country
+entity_type: node
+bundle: international_transfer_program
+label: Country
+description: 'Country these Universities hail from '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      continent: continent
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

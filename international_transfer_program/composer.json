@@ -1,0 +1,14 @@
+{
+  "name": "drupal/international_transfer_program",
+  "type": "drupal-module",
+  "description": "Importing itp content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/international_transfer_program",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/international_transfer_program",
+    "source": "http://cgit.drupalcode.org/international_transfer_program"
+  },
+  "require": { }
+}

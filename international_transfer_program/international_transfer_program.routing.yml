@@ -1,0 +1,8 @@
+
+international_transfer_program.itp_controller_hello:
+  path: '/international_transfer_program/hello/{name}'
+  defaults:
+    _controller: '\Drupal\international_transfer_program\Controller\itpController::hello'
+    _title: 'itpController'
+  requirements:
+    _permission: 'access content'

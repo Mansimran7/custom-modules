@@ -1,0 +1,13 @@
+name: 'international transfer program'
+type: module
+description: 'Importing itp content type'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:menu_ui
+  - drupal:taxonomy
+  - drupal:link
+  - drupal:path
+  - drupal:user
+  - drupal:text

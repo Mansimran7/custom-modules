@@ -1,0 +1,14 @@
+{
+  "name": "drupal/research_centers",
+  "type": "drupal-module",
+  "description": "Research centers content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/research_centers",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/research_centers",
+    "source": "http://cgit.drupalcode.org/research_centers"
+  },
+  "require": { }
+}

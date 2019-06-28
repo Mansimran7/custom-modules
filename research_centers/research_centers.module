@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains research_centers.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function research_centers_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the research_centers module.
+    case 'help.page.research_centers':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Research centers content type') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function research_centers_theme() {
+  return [
+    'research_centers' => [
+      'render element' => 'children',
+    ],
+  ];
+}

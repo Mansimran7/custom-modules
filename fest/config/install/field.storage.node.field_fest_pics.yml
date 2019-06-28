@@ -1,0 +1,33 @@
+uuid: b43f2232-6511-4822-86d9-0e0017831edc
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+  enforced:
+    module:
+      - fest
+id: node.field_fest_pics
+field_name: field_fest_pics
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

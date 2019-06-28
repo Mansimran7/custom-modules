@@ -1,0 +1,22 @@
+uuid: 829d8806-5365-42f3-a15d-f0b888a9bc2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+  enforced:
+    module:
+      - fest
+id: node.field_fest_website
+field_name: field_fest_website
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

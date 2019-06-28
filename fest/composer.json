@@ -1,0 +1,14 @@
+{
+  "name": "drupal/fest",
+  "type": "drupal-module",
+  "description": "Importing fest content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/fest",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/fest",
+    "source": "http://cgit.drupalcode.org/fest"
+  },
+  "require": { }
+}

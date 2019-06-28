@@ -1,0 +1,14 @@
+name: 'fest'
+type: module
+description: 'Importing fest content type'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:image
+  - drupal:link
+  - drupal:path
+  - drupal:text
+  - drupal:file
+  - drupal:node
+  - drupal:user
+  - drupal:menu_ui

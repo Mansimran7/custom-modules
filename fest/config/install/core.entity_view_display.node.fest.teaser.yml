@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fest.body
+    - field.field.node.fest.field_fest_pics
+    - field.field.node.fest.field_fest_website
+    - field.field.node.fest.field_fest_youtube_link
+    - node.type.fest
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - fest
+id: node.fest.teaser
+targetEntityType: node
+bundle: fest
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_fest_pics: true
+  field_fest_website: true
+  field_fest_youtube_link: true
+  langcode: true

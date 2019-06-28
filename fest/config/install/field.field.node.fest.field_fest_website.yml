@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fest_website
+    - node.type.fest
+  module:
+    - link
+  enforced:
+    module:
+      - fest
+id: node.fest.field_fest_website
+field_name: field_fest_website
+entity_type: node
+bundle: fest
+label: 'fest website'
+description: 'A link to the website of the fest'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

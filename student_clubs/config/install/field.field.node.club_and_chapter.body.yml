@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.club_and_chapter
+  module:
+    - text
+  enforced:
+    module:
+      - student_clubs
+id: node.club_and_chapter.body
+field_name: body
+entity_type: node
+bundle: club_and_chapter
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

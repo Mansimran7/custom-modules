@@ -1,0 +1,23 @@
+uuid: 5baf6269-cae5-4f3f-a820-4793dc32036e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - student_clubs
+id: node.field_organisation_category
+field_name: field_organisation_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

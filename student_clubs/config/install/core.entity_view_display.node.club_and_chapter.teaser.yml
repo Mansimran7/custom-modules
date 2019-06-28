@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.club_and_chapter.body
+    - field.field.node.club_and_chapter.field_facebook_link
+    - field.field.node.club_and_chapter.field_logo_of_organisation
+    - field.field.node.club_and_chapter.field_organisation_category
+    - node.type.club_and_chapter
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - student_clubs
+id: node.club_and_chapter.teaser
+targetEntityType: node
+bundle: club_and_chapter
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_facebook_link: true
+  field_logo_of_organisation: true
+  field_organisation_category: true
+  langcode: true

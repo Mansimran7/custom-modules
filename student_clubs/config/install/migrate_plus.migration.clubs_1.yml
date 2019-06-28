@@ -1,0 +1,61 @@
+uuid: 9a260262-706e-4344-9798-3c4e4f0ef0c4
+langcode: en
+id: clubs_1
+status: true
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: default
+label: 'clubs_csv_import1'
+source:
+  plugin: csv
+  path: /home/mansimran/Desktop/mansimran1/clubs1.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+    file_source: /var/www/migrationdata/clubs
+    file_dest: 'public://clubs/'
+process:
+  type:
+    plugin: default_value
+    default_value: club_and_chapter
+  source_path:  
+    -
+      plugin: skip_on_empty
+      method: process
+      source: logo
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/file_source
+        - logo
+  title: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_logo_of_organisation:
+    plugin: file_import
+    source: '@source_path'
+    destination: constants/file_dest
+  field_facebook_link/uri: fb_link
+  field_facebook_link/title:
+    plugin: default_value
+    default_value: 'Fb Link'
+  field_organisation_category:
+    plugin: entity_lookup
+    entity_type: taxonomy_term
+    bundle: category_of_organisation
+    source: organisation_category
+destination:
+  plugin: 'entity:node'
+  bundle: club_and_chapter
+migration_dependencies:
+  required: {  }
+  optional: {  }

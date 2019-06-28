@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo_of_organisation
+    - node.type.club_and_chapter
+  module:
+    - image
+  enforced:
+    module:
+      - student_clubs
+id: node.club_and_chapter.field_logo_of_organisation
+field_name: field_logo_of_organisation
+entity_type: node
+bundle: club_and_chapter
+label: 'logo of organisation'
+description: 'Logo of the organisation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: clubs
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_school
+    - node.type.academic_research_
+    - taxonomy.vocabulary.school_s_of_vit_
+  enforced:
+    module:
+      - academic_research
+id: node.academic_research_.field_school
+field_name: field_school
+entity_type: node
+bundle: academic_research_
+label: school
+description: 'School carrying the research'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      school_s_of_vit_: school_s_of_vit_
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

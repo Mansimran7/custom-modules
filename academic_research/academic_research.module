@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains academic_research.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function academic_research_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the academic_research module.
+    case 'help.page.academic_research':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('academic research content type') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function academic_research_theme() {
+  return [
+    'academic_research' => [
+      'render element' => 'children',
+    ],
+  ];
+}

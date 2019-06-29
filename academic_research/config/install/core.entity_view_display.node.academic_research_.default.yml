@@ -1,0 +1,51 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.academic_research_.body
+    - field.field.node.academic_research_.field_lab_facilities
+    - field.field.node.academic_research_.field_school
+    - node.type.academic_research_
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+  enforced:
+    module:
+      - academic_research
+id: node.academic_research_.default
+targetEntityType: node
+bundle: academic_research_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lab_facilities:
+    type: entity_reference_revisions_entity_view
+    weight: 103
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_school:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

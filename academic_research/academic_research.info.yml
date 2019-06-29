@@ -1,0 +1,14 @@
+name: 'academic research'
+type: module
+description: 'academic research content type'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:node
+  - drupal:text
+  - drupal:user
+  - drupal:menu_ui
+  - drupal:taxonomy
+  - drupal:path
+  - drupal:entity_reference_revisions
+  - drupal:paragraphs

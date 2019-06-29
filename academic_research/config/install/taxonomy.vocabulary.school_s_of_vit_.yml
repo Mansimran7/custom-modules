@@ -1,0 +1,12 @@
+uuid: 30a88923-bcef-4a81-8cb9-a80941356747
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - academic_research
+name: 'SCHOOL''s of vit'
+vid: school_s_of_vit_
+description: 'Various academic schools in vit'
+hierarchy: 0
+weight: 0

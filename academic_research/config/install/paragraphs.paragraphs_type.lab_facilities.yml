@@ -1,0 +1,12 @@
+uuid: 436a9a77-4fed-4085-b474-3da0a8a78e1f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - academic_research
+id: lab_facilities
+label: 'Lab Facilities'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

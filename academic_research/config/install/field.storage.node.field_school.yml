@@ -1,0 +1,23 @@
+uuid: 711659e0-ad09-4fac-9943-1efee9f2db4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - academic_research
+id: node.field_school
+field_name: field_school
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

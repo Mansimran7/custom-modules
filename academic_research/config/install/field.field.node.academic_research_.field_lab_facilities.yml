@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lab_facilities
+    - node.type.academic_research_
+    - paragraphs.paragraphs_type.lab_facilities
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - academic_research
+id: node.academic_research_.field_lab_facilities
+field_name: field_lab_facilities
+entity_type: node
+bundle: academic_research_
+label: 'Lab Facilities'
+description: 'Lab facilities of VIT '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      lab_facilities: lab_facilities
+    target_bundles_drag_drop:
+      lab_facilities:
+        enabled: true
+        weight: 5
+      member_details_field:
+        weight: 6
+        enabled: false
+      office_details:
+        weight: 7
+        enabled: false
+      r_d_projects:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

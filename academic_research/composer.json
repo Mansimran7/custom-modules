@@ -1,0 +1,14 @@
+{
+  "name": "drupal/academic_research",
+  "type": "drupal-module",
+  "description": "academic research content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/academic_research",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/academic_research",
+    "source": "http://cgit.drupalcode.org/academic_research"
+  },
+  "require": { }
+}

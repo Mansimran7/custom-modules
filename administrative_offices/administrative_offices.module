@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains administrative_offices.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function administrative_offices_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the administrative_offices module.
+    case 'help.page.administrative_offices':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Administrative offices content type') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function administrative_offices_theme() {
+  return [
+    'administrative_offices' => [
+      'render element' => 'children',
+    ],
+  ];
+}

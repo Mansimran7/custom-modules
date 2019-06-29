@@ -1,0 +1,30 @@
+uuid: b750a99d-9cc8-4c43-9fce-5e75fd128bf8
+langcode: en
+status: true
+id: admin_para_migration
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: default
+label: 'admin content migration'
+source:
+  plugin: csv
+  path: /home/mansimran/Desktop/mansimran1/adminofficepara.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+process:
+  type:
+    plugin: default_value
+    default_value: office_details
+  field_contact_details: Contact
+  field_location: location
+destination:
+  plugin: entity_reference_revisions:paragraph 
+migration_dependencies:
+  required: {  }
+  optional: {  }

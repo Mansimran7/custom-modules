@@ -1,0 +1,14 @@
+{
+  "name": "drupal/administrative_offices",
+  "type": "drupal-module",
+  "description": "Administrative offices content type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/administrative_offices",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/administrative_offices",
+    "source": "http://cgit.drupalcode.org/administrative_offices"
+  },
+  "require": { }
+}

@@ -1,0 +1,5 @@
+name: 'administrative offices'
+type: module
+description: 'Administrative offices content type'
+core: 8.x
+package: 'Custom'

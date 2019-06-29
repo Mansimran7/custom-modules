@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - administrative_offices
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Administrative offices'
+type: administrative_offices
+description: 'List of administrative offices in VIT'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

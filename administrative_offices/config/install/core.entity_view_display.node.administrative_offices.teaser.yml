@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.administrative_offices.body
+    - field.field.node.administrative_offices.field_office_
+    - node.type.administrative_offices
+  module:
+    - text
+    - user
+  enforced:
+    module:
+      - administrative_offices
+id: node.administrative_offices.teaser
+targetEntityType: node
+bundle: administrative_offices
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_office_: true
+  langcode: true

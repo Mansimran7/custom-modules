@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_
+    - node.type.administrative_offices
+    - paragraphs.paragraphs_type.office_details
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - administrative_offices
+id: node.administrative_offices.field_office_
+field_name: field_office_
+entity_type: node
+bundle: administrative_offices
+label: 'Office details'
+description: 'Office details'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      office_details: office_details
+    target_bundles_drag_drop:
+      member_details_field:
+        weight: 4
+        enabled: false
+      office_details:
+        enabled: true
+        weight: 5
+      r_d_projects:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

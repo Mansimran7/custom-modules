@@ -1,0 +1,101 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.programs_offered.body
+    - field.field.node.programs_offered.field_admission_procedure
+    - field.field.node.programs_offered.field_check_list
+    - field.field.node.programs_offered.field_counselling_procedure
+    - field.field.node.programs_offered.field_eligibility
+    - field.field.node.programs_offered.field_hostel_details
+    - field.field.node.programs_offered.field_how_to_apply
+    - field.field.node.programs_offered.field_information_brochure
+    - field.field.node.programs_offered.field_required_documents
+    - node.type.programs_offered
+  module:
+    - link
+    - text
+    - user
+  enforced:
+    module:
+      - programs
+id: node.programs_offered.default
+targetEntityType: node
+bundle: programs_offered
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_admission_procedure:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_check_list:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_counselling_procedure:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_eligibility:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hostel_details:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_how_to_apply:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_brochure:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_required_documents:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

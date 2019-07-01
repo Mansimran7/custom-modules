@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_brochure
+    - node.type.programs_offered
+  module:
+    - link
+  enforced:
+    module:
+      - programs
+id: node.programs_offered.field_information_brochure
+field_name: field_information_brochure
+entity_type: node
+bundle: programs_offered
+label: 'information brochure'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

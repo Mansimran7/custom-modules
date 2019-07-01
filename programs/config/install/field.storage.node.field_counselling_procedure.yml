@@ -1,0 +1,22 @@
+uuid: 58e414fb-a660-49e4-bc1c-3935d4c30a15
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - programs
+id: node.field_counselling_procedure
+field_name: field_counselling_procedure
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

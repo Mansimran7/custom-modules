@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hostel_details
+    - node.type.programs_offered
+  module:
+    - text
+  enforced:
+    module:
+      - programs
+id: node.programs_offered.field_hostel_details
+field_name: field_hostel_details
+entity_type: node
+bundle: programs_offered
+label: 'hostel details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

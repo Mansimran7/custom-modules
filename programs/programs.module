@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains programs.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function programs_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the programs module.
+    case 'help.page.programs':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function programs_theme() {
+  return [
+    'programs' => [
+      'render element' => 'children',
+    ],
+  ];
+}

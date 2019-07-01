@@ -1,0 +1,22 @@
+uuid: d4a23da2-0f38-4414-90e0-2f795afdae30
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - programs
+id: node.field_eligibility
+field_name: field_eligibility
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

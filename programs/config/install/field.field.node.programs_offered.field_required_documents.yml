@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_required_documents
+    - node.type.programs_offered
+  module:
+    - text
+  enforced:
+    module:
+      - programs
+id: node.programs_offered.field_required_documents
+field_name: field_required_documents
+entity_type: node
+bundle: programs_offered
+label: 'required documents'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

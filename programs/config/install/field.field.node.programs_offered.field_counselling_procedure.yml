@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_counselling_procedure
+    - node.type.programs_offered
+  module:
+    - text
+  enforced:
+    module:
+      - programs
+id: node.programs_offered.field_counselling_procedure
+field_name: field_counselling_procedure
+entity_type: node
+bundle: programs_offered
+label: 'counselling procedure'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

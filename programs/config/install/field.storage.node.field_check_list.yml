@@ -1,0 +1,22 @@
+uuid: 6db3a9c7-6d4d-4a9c-a4c1-8316d39913bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - programs
+id: node.field_check_list
+field_name: field_check_list
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

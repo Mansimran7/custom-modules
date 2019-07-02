@@ -7,6 +7,9 @@ dependencies:
   module:
     - node
     - user
+  enforced:
+    module:
+      - programs
 id: programs_offered
 label: 'programs offered'
 module: views

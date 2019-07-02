@@ -7,6 +7,9 @@ dependencies:
   module:
     - node
     - user
+  enforced:
+    module:
+      - chapters
 id: student_chapters
 label: 'Student Chapters'
 module: views

@@ -8,6 +8,9 @@ dependencies:
   module:
     - node
     - user
+  enforced:
+    module:
+      - startups
 id: startups
 label: startups
 module: views

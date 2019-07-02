@@ -9,6 +9,9 @@ dependencies:
     - image
     - node
     - user
+  enforced:
+    module:
+      - student_clubs
 id: student_clubs
 label: 'Student Clubs'
 module: views

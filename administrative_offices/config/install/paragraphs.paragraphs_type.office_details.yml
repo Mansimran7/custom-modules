@@ -1,7 +1,10 @@
 uuid: af03fad4-b366-424d-bd9e-71b303a68ff3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - administrative_offices
 id: office_details
 label: 'Office details'
 icon_uuid: null

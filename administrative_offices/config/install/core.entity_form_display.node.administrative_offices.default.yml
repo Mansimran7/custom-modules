@@ -9,6 +9,9 @@ dependencies:
     - paragraphs
     - path
     - text
+  enforced:
+    module:
+      - administrative_offices
 id: node.administrative_offices.default
 targetEntityType: node
 bundle: administrative_offices

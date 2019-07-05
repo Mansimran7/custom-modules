@@ -40,19 +40,19 @@ process:
   body/format:
     plugin: default_value
     default_value: basic_html
-  field_logo_of_organisation:
-    plugin: file_import
-    source: '@source_path'
-    destination: constants/file_dest
   field_facebook_link/uri: fb_link
   field_facebook_link/title:
     plugin: default_value
     default_value: 'Fb Link'
+  field_logo_of_organisation:
+    plugin: file_import
+    source: '@source_path'
+    destination: constants/file_dest
   field_organisation_category:
     plugin: entity_lookup
     entity_type: taxonomy_term
     bundle: category_of_organisation
-    source: organisation_category
+    source: category
 destination:
   plugin: 'entity:node'
   bundle: club_and_chapter
